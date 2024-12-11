@@ -1,6 +1,6 @@
 const axios = require('axios');
 const fs = require('fs');
-const path = require('path');;
+const path = require('path');
 const { sendMessage } = require('../handles/sendMessage');
 
 // Path to the stored image data
