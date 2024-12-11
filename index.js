@@ -16,7 +16,7 @@ app.get('/privacy-policy', (req, res) => {
 
 // Route for the homepage
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'site', 'index.html'));
 });
 
 const VERIFY_TOKEN = 'pagebot';
