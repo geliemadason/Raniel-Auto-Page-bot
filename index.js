@@ -11,12 +11,16 @@ app.use(express.static(path.join(__dirname, 'public'))); // Serve static files f
 
 // Route for serving the privacy policy page
 app.get('/privacy-policy', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));
+  res.sendFile(path.join(__dirname, 'site', 'privacy-policy.html'));
 });
 
 // Route for the homepage
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'site', 'index.html'));
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'site', 'guide.html'));
 });
 
 const VERIFY_TOKEN = 'pagebot';
