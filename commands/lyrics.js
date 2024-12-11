@@ -5,7 +5,7 @@ module.exports = {
   name: 'lyrics',
   description: 'Fetch song lyrics',
   usage: 'lyrics [song name]',
-  author: 'coffee',
+  author: 'Raniel',
 
   async execute(senderId, args, pageAccessToken) {
     try {

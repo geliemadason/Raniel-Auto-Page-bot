@@ -5,7 +5,7 @@ module.exports = {
   name: 'pinterest',
   description: 'Search Pinterest for images.',
   usage: '-pinterest prompt -number',
-  author: 'joncll',
+  author: 'Raniel',
 
   async execute(senderId, args, pageAccessToken) {
     // Ensure args is defined and is an array, default to an empty string if not
